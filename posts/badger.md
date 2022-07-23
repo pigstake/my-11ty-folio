@@ -27,7 +27,7 @@ Bright colors and slightly informal typography provide a memorable experience am
 
 <a className='img-link' href='http://bit.ly/pwc-badger-google-photos'>
   <!--<img className='img-full' src='/img/badger-research.jpg' alt='Sticky notes with research notes organized'/>-->
-  {% image "img/banana.jpg", "Photo of something something" %}
+  {% image { src: "img/banana.jpg", alt: "Photo of something something", widths: [720, 720] } %}
 </a>
 
 I moderated user interviews while my product manager and two engineers noted observations. We organized our notes together to share insights.

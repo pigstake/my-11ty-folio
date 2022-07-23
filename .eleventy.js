@@ -7,9 +7,9 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
 
-function imageShortcode(src, cls=null, alt=null, sizes=null, widths=[400, 400]) {
+function imageShortcode({ src, cls, alt, sizes, widths }) {
   let options = {
-    widths: widths,
+    widths: widths || [400, 400],
     formats: ['jpeg'],
   };
 
