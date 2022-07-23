@@ -21,6 +21,7 @@ body {
   color: var(--darkgray);
   background-color: var(--white);
 }
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -31,7 +32,7 @@ img {
 }
 p,
 .tmpl-post li {
-  line-height: 1.45;
+  /* line-height: 1.45; */
 }
 a[href] {
   color: var(--blue);
@@ -40,13 +41,14 @@ a[href]:visited {
   color: var(--navy);
 }
 main {
-  padding: 1rem;
+  padding: 1.618rem;
 }
 main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  /* border-bottom: 1px dashed var(--lightgray); */
+  /* padding: 0 1rem; */
 }
 header:after {
   content: "";
@@ -64,11 +66,11 @@ table th {
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 pre {
-  font-size: 14px;
-  line-height: 1.375;
+  /* font-size: 14px; */
+  /* line-height: 1.375; */
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -120,26 +122,26 @@ code {
 }
 
 /* Header */
-.home {
+.logo,
+.nav {
   padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
+  margin: .5rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
 }
-.home :link:not(:hover) {
+.logo :link:not(:hover) {
   text-decoration: none;
 }
-
+.logo {
+  float: left;
+}
 /* Nav */
 .nav {
-  padding: 0;
   list-style: none;
-  float: left;
-  margin-left: 1em;
+  float: right;
 }
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin-left: 1em;
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
@@ -159,7 +161,7 @@ code {
   flex-wrap: wrap;
   align-items: baseline;
   counter-increment: start-from -1;
-  line-height: 1.8;
+  /* line-height: 1.8; */
 }
 .postlist-item:before {
   display: inline-block;
@@ -170,7 +172,7 @@ code {
 }
 .postlist-date,
 .postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
+  /* font-size: 0.8125em; /* 13px /16 */ */
   color: var(--darkgray);
 }
 .postlist-date {
@@ -187,8 +189,8 @@ code {
   font-weight: bold;
 }
 .tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
-  font-weight: 700;
+  /* font-size: 1.1875em; /* 19px /16 */ */
+  /* font-weight: 700; */
 }
 
 
@@ -198,7 +200,7 @@ code {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 0.75em; /* 12px /16 */
+  /* font-size: 0.75em; /* 12px /16 */ */
   padding: 0.08333333333333em 0.3333333333333em; /* 1px 4px /12 */
   margin-left: 0.6666666666667em; /* 8px /12 */
   margin-top: 0.5em; /* 6px /12 */
@@ -207,7 +209,7 @@ code {
   border: 1px solid var(--gray);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
-  line-height: 1.8;
+  /* line-height: 1.8; */
 }
 a[href].post-tag,
 a[href].post-tag:visited {
