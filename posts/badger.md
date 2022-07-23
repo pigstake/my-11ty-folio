@@ -18,13 +18,16 @@ My contribution: Design, Research, Front-end Code
 
 <img className='img-full' src='portfolio/badger-screenshot.png' alt='Badger app'/>
 
+<!--<img src="https://via.placeholder.com/150" />-->
+
 ## Key design decisions
 The sales team already received weekly reports, so I tailored the Badger experience to fit into this existing behavior. Graphs, performance summaries, and a notification schedule were designed around familiar work rhythms.
 
 Bright colors and slightly informal typography provide a memorable experience among the usual apps our users have at work. The app uses Libre Franklin, which is versatile enough to make big numbers and small fonts look good.
 
 <a className='img-link' href='http://bit.ly/pwc-badger-google-photos'>
-  <img className='img-full' src='./img/badger-research.jpg' alt='Sticky notes with research notes organized'/>
+  <!--<img className='img-full' src='/img/badger-research.jpg' alt='Sticky notes with research notes organized'/>-->
+  {% image "img/banana.jpg", "Photo of something something" %}
 </a>
 
 I moderated user interviews while my product manager and two engineers noted observations. We organized our notes together to share insights.

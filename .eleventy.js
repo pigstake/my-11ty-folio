@@ -7,7 +7,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const Image = require("@11ty/eleventy-img");
 
-function imageShortcode(src, cls, alt, sizes, widths) {
+function imageShortcode(src, cls=null, alt=null, sizes=null, widths=[400, 400]) {
   let options = {
     widths: widths,
     formats: ['jpeg'],
@@ -29,7 +29,6 @@ function imageShortcode(src, cls, alt, sizes, widths) {
 }
 
 module.exports = function(eleventyConfig) {
-
   eleventyConfig.addNunjucksShortcode("image", imageShortcode);
 
   // Copy the `img` and `css` folders to the output
