@@ -5,31 +5,32 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-// const Image = require("@11ty/eleventy-img");
-//
-// function imageShortcode({ src, cls, alt, sizes="(min-width: 1024px) 100vw, 50vw", widths }) {
-//   let options = {
-//     widths: widths || [600],
-//     formats: ['webp', 'png'],
-//   };
-//
-//   // generate images, while this is async we don’t wait
-//   Image(src, options);
-//
-//   let imageAttributes = {
-//     class: cls,
-//     alt,
-//     sizes,
-//     loading: "lazy",
-//     decoding: "async",
-//   };
-//   // get metadata even the images are not fully generated
-//   let metadata = Image.statsSync(src, options);
-//   return Image.generateHTML(metadata, imageAttributes);
-// }
+const Image = require("@11ty/eleventy-img");
+
+function imageShortcode({ src, cls, alt, sizes="(min-width: 320px) 100vw, 50vw", media, widths }) {
+  let options = {
+    widths: widths || [600],
+    formats: ['webp', 'png'],
+  };
+
+  // generate images, while this is async we don’t wait
+  Image(src, options);
+
+  let imageAttributes = {
+    class: cls,
+    alt,
+    sizes,
+    media,
+    loading: "lazy",
+    decoding: "async",
+  };
+  // get metadata even the images are not fully generated
+  let metadata = Image.statsSync(src, options);
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function(eleventyConfig) {
-  // eleventyConfig.addNunjucksShortcode("image", imageShortcode);
+  eleventyConfig.addNunjucksShortcode("image", imageShortcode);
 
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");

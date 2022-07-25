@@ -48,16 +48,16 @@ body {
   box-shadow: 0 0 1.618rem --c-gradient1; */
   color: #black; /* #D4FFFF; */
   line-height: var(--scale2);
-  padding: calc(var(--scale2) * 1rem) 1rem;
+  padding: 0 1rem; /* calc(var(--scale2) * 1rem) PREVIOUS TOP/BOTTOM */
 }
 @media (min-width: 600px) {
   body {
-    padding: calc(var(--scale3) * 1rem) calc(var(--scale2) * 1rem);
+    padding: 0 calc(var(--scale2) * 1rem); /* calc(var(--scale3) * 1rem) */
   }
 }
 @media (min-width: 900px) {
   body {
-    padding: calc(var(--scale5) * 1rem) calc(var(--scale3) * 1rem);
+    padding: 0 calc(var(--scale3) * 1rem); /* calc(var(--scale5) * 1rem) */
   }
 }
 
@@ -85,7 +85,7 @@ header {
   /* background-position: center;
 	height: 100vw; /* need % for html border style */
 }
-@keyframes body-gradient {
+/* @keyframes body-gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -95,8 +95,10 @@ header {
 	100% {
 		background-position: 0% 50%;
 	}
+} */
+main {
+  padding-top: 0;
 }
-
 /* Layout
 ************/
 .big-panel {
@@ -112,8 +114,15 @@ header {
     /* flex-direction: row; */
   }
 }
-.big-panel:first-of-type {
-  margin-top: calc(var(--scale4) * -1rem);
+.hero {
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: calc(var(--scale4) * -1rem); */
+}
+@media (min-width: 900px) {
+  .hero {
+    flex-direction: row;
+  }
 }
 .big-panel--content {
   margin-bottom: calc(var(--scale5) * 1rem);

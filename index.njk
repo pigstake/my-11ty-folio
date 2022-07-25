@@ -1,6 +1,51 @@
 ---
 layout: layouts/home.njk
 ---
+
+<div class='big-panel hero' id='bad-rhyme-joke'>
+  <h1>Web design<br/>since 2009*</h1>
+  <img src='img/home-office-view.jpg' class='hero-img' alt="Photo of something something" />
+</div>
+<div class='big-panel'>
+  <p>Some things about me and, I dunno, my mindset or perspective on work. Maybe two sentences. Maybe three. A few lines of details I think, depending on the story I want to tell.</p>
+</div>
+<div class='big-panel'>
+  <div class='big-panel--content'>
+    <h2>“Quote about working with me...”</h2>
+    <p>...from someone who worked with me on a product team.</p>
+  </div>
+</div>
+<div class='big-panel'>
+  <div class='big-panel--content'>
+    <h5>Design Leadership</h5>
+    <h2>My intentions as a leader are to build trust and to practice what I believe.</h2>
+    <p>Building trust with both designers I manage and other leaders requires me to listen. I draw from my UX research experience for this; I want to understand your goals and experience when I work with you. Trust also requires me to act, to follow through in the ways I can help you. If I don't listen, you won't trust me; if I listen and never take action, your might trust me a little. If I listen, define ways I can help and offer to take action, and then follow through with that promise, then we're building trust.</p>
+    <p>I believe that teammates rise to the level of their environment. So, I set my teams up for success. I clarify expectations and build structures that help designers and their teams succeed. <b>ADD CONCRETE</b></li>
+  </div>
+</div>
+<div class='big-panel'>
+  <div class='big-panel--content'>
+    <p class="quote"><q>He’s fostered a safe space where designers can speak candidly about their struggles. Coupled with his extensive design knowledge, helpful critiques, and probing questions, he consistently challenges us to think beyond the box.</q></p>
+    <p class="quote--byline">– Farica Carroll, Senior Product Designer @ Philosophie</p>
+  </div>
+  <div class='big-panel--content'>
+    <p class="quote"><q>...he gave me the independence to explore new ideas and validate them with user testing in a fast-paced environment.</q></p>
+    <p class="quote--byline">– Agustin Luque, Product Designer @ Philosophie</p>
+  </div>
+</div>
+<div class='big-panel'>
+  <div class='big-panel--content'>
+    <h2>Design Practice</h2>
+    <p>Here's a bit about how I approach design work — some values, mindsets, and concrete outcomes.</p>
+  </div>
+</div>
+<div class='big-panel'>
+  <h2 class='has-fancy-border'>Life ≠ Work</h2>
+</div>
+<div class='big-panel'>
+  <p><a href="#bad-rhyme-joke">*100% intentional rhyme and reason</a></p>
+</div>
+
 <div>
   {% set maxPosts = collections.posts.length | min(3) %}
   <h2>{% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} recent works{% endif %}</h2>
