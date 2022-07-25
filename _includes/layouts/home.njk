@@ -3,9 +3,8 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-<div class='big-panel'>
-  <h1>Web design<br/>since 2009</h1>
-  <p>(100% intentional rhyme)
+<div class='big-panel' id='bad-rhyme-joke'>
+  <h1>Web design<br/>since 2009*</h1>
 </div>
 <div class='big-panel'>
   <p>Some things about me and, I dunno, my mindset or perspective on work. Maybe two sentences. Maybe three. A few lines of details I think, depending on the story I want to tell.</p>
@@ -22,18 +21,16 @@ templateClass: tmpl-home
     <h2>My intentions as a leader are to build trust and to practice what I believe.</h2>
     <p>Building trust with both designers I manage and other leaders requires me to listen. I draw from my UX research experience for this; I want to understand your goals and experience when I work with you. Trust also requires me to act, to follow through in the ways I can help you. If I don't listen, you won't trust me; if I listen and never take action, your might trust me a little. If I listen, define ways I can help and offer to take action, and then follow through with that promise, then we're building trust.</p>
     <p>I believe that teammates rise to the level of their environment. So, I set my teams up for success. I clarify expectations and build structures that help designers and their teams succeed. <b>ADD CONCRETE</b></li>
-
-
   </div>
 </div>
 <div class='big-panel'>
   <div class='big-panel--content'>
-    <h6>“He’s fostered a safe space where designers can speak candidly about their struggles. Coupled with his extensive design knowledge, helpful critiques, and probing questions, he consistently challenges us to think beyond the box.”</h2>
-    <p>– Farica Carroll, Senior Product Designer @ Philosophie</p>
+    <p class="quote"><q>He’s fostered a safe space where designers can speak candidly about their struggles. Coupled with his extensive design knowledge, helpful critiques, and probing questions, he consistently challenges us to think beyond the box.</q></p>
+    <p class="quote--byline">– Farica Carroll, Senior Product Designer @ Philosophie</p>
   </div>
   <div class='big-panel--content'>
-    <h6>“...he gave me the independence to explore new ideas and validate them with user testing in a fast-paced environment.”</h2>
-    <p>– Agustin Luque, Product Designer @ Philosophie</p>
+    <p class="quote"><q>...he gave me the independence to explore new ideas and validate them with user testing in a fast-paced environment.</q></p>
+    <p class="quote--byline">– Agustin Luque, Product Designer @ Philosophie</p>
   </div>
 </div>
 <div class='big-panel'>
@@ -46,7 +43,7 @@ templateClass: tmpl-home
   <h2 class='has-fancy-border'>Life ≠ Work</h2>
 </div>
 <div class='big-panel'>
-  <h2>Your friendly neighborhood anti-capitalist middle manager</h2>
+  <p><a href="#bad-rhyme-joke">*100% intentional rhyme and reason</a></p>
 </div>
 
 {{ content | safe }}

@@ -19,13 +19,15 @@
 
 }
 
-/*** Theme styles */
+/*** Theme styles
+******************/
 html,
 body {
   font-family: var(--font-family);
 }
 
-/* Site border effect */
+/* Site border effect
+**********************/
 html {
   /* background: hsla(13, 100%, 40%, 1); */
   /* border: solid 1.618rem var(--c-black); */
@@ -59,7 +61,8 @@ body {
   }
 }
 
-/* Body gradient */
+/* Body gradient
+****************/
 body,
 header {
   background-color: white;
@@ -94,9 +97,10 @@ header {
 	}
 }
 
-/* Layout */
+/* Layout
+************/
 .big-panel {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -109,19 +113,20 @@ header {
   }
 }
 .big-panel:first-of-type {
-  margin-top:;
+  margin-top: calc(var(--scale4) * -1rem);
 }
 .big-panel--content {
-
+  margin-bottom: calc(var(--scale5) * 1rem);
 }
 .has-fancy-border {
   border: solid 0.25rem gold;
-  padding: 2.441rem;
+  padding: calc(var(--scale4) * 1rem);
   clip-path: polygon( 0% 29%, 10% 0, 85% 0%, 100% 20%, 100% 80%, 85% 100%, 10% 100%, 0% 80%, 0% 10% );
   mix-blend-mode: color-dodge;
 }
 
-/* Bottom header */
+/* Bottom header
+****************/
 header {
   /* background-color: #CC2C00; */
   border-top: solid 2px var(--c-border1);
@@ -157,12 +162,6 @@ header {
 .logo a[href],
 .nav-item a[href] {
   /* color: #E3C567; */
-}
-
-/* Cursor effect */
-#myCanvas {
-  width: 100vw;
-  height: 100vw;
 }
 
 /* Typography */
@@ -231,3 +230,21 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+}
+/* QUOTES
+*************/
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
+.quote {
+  font-size: calc(var(--scale0) * 1rem);
+}
+.quote--byline {
+  font-style: italic;
+}
