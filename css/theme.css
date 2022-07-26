@@ -46,7 +46,7 @@ html {
 body {
   /* border-radius: 0 2.618rem 0 0;
   box-shadow: 0 0 1.618rem --c-gradient1; */
-  color: #black; /* #D4FFFF; */
+  color: black; /* #D4FFFF; */
   line-height: var(--scale2);
   padding: 0 1rem; /* calc(var(--scale2) * 1rem) PREVIOUS TOP/BOTTOM */
 }
@@ -65,7 +65,7 @@ body {
 ****************/
 body,
 header {
-  background-color: white;
+  background-color: #FDFDFD;
   /* animation: body-gradient 13s ease infinite; */
   /* background: linear-gradient(-45deg, var(--c-gradient1), var(--c-gradient2));
 	background-size: 300% 100%; */
@@ -114,6 +114,12 @@ main {
     /* flex-direction: row; */
   }
 }
+.big-panel--half {
+  height: 50vw;
+}
+.big-panel__content {
+  margin-bottom: calc(var(--scale5) * 1rem);
+}
 .hero {
   align-items: center;
   justify-content: space-between;
@@ -124,8 +130,19 @@ main {
     flex-direction: row;
   }
 }
-.big-panel--content {
-  margin-bottom: calc(var(--scale5) * 1rem);
+.hero-img {
+  max-width: 100%;
+}
+@media (min-width: 900px) {
+  .hero-img {
+    max-width: 50vw;
+  }
+}
+.hero-img--180 {
+
+}
+.img {
+  max-width: 100%;
 }
 .has-fancy-border {
   border: solid 0.25rem gold;
@@ -254,6 +271,6 @@ q::after {
 .quote {
   font-size: calc(var(--scale0) * 1rem);
 }
-.quote--byline {
+.quote__byline {
   font-style: italic;
 }
