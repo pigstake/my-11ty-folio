@@ -102,7 +102,7 @@ main {
 /* Layout
 ************/
 .big-panel {
-  /* align-items: center; */
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -111,31 +111,31 @@ main {
 }
 @media (min-width: 900px) {
   .big-panel {
-    /* flex-direction: row; */
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
-.big-panel--half {
-  height: 50vw;
+.not-so-big-panel {
+  margin-bottom: calc(var(--scale7) * 1rem);
 }
 .big-panel__content {
   margin-bottom: calc(var(--scale5) * 1rem);
 }
 .hero {
-  align-items: center;
-  justify-content: space-between;
   /* margin-top: calc(var(--scale4) * -1rem); */
 }
 @media (min-width: 900px) {
   .hero {
-    flex-direction: row;
+
   }
 }
 .hero-img {
-  max-width: 100%;
+  max-width: 75%;
 }
 @media (min-width: 900px) {
   .hero-img {
-    max-width: 50vw;
+    max-width: 50%;
   }
 }
 .hero-img--180 {
@@ -143,6 +143,9 @@ main {
 }
 .img {
   max-width: 100%;
+}
+.squiggle {
+  max-width: 15rem;
 }
 .has-fancy-border {
   border: solid 0.25rem gold;
@@ -256,6 +259,9 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+}
+hr {
+  margin: 1rem 0;
 }
 /* QUOTES
 *************/
