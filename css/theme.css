@@ -101,7 +101,7 @@ main {
 }
 /* Layout
 ************/
-main .big-panel {
+main .hero {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -110,24 +110,10 @@ main .big-panel {
   /* text-align: center; */
 }
 @media (min-width: 900px) {
-  main .big-panel {
+  main .hero {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-.not-so-big-panel {
-  margin-bottom: calc(var(--scale7) * 1rem);
-}
-.big-panel__content {
-  margin-bottom: calc(var(--scale5) * 1rem);
-}
-.hero {
-  /* margin-top: calc(var(--scale4) * -1rem); */
-}
-@media (min-width: 900px) {
-  .hero {
-
   }
 }
 .hero-heading {
@@ -141,8 +127,8 @@ main .big-panel {
     max-width: 50%;
   }
 }
-.hero-img--180 {
-
+.usual-bottom {
+  margin-bottom: calc(var(--scale7) * 1rem);
 }
 .img {
   max-width: 100%;
