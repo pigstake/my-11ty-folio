@@ -106,7 +106,8 @@ main .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: calc(var(--scale7) * 1rem) 0;
+  margin-bottom: calc(var(--scale7) * 1rem);
+  padding-top: calc(var(--scale7) * 1rem);
   /* text-align: center; */
 }
 @media (min-width: 900px) {
@@ -114,6 +115,7 @@ main .hero {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: calc(var(--scale5) * 1rem);
   }
 }
 .hero-heading {
@@ -264,13 +266,13 @@ q {
   quotes: "“" "”" "‘" "’";
 }
 q::before {
-    content: open-quote;
+  content: open-quote;
 }
 q::after {
-    content: close-quote;
+  content: close-quote;
 }
 .quote {
-  font-size: calc(var(--scale0) * 1rem);
+  /* font-size: calc(var(--scale0) * 1rem); */
 }
 .quote__byline {
   font-style: italic;
