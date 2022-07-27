@@ -101,16 +101,16 @@ main {
 }
 /* Layout
 ************/
-.big-panel {
+main .big-panel {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
+  margin: calc(var(--scale7) * 1rem) 0;
   /* text-align: center; */
 }
 @media (min-width: 900px) {
-  .big-panel {
+  main .big-panel {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -130,8 +130,11 @@ main {
 
   }
 }
+.hero-heading {
+  flex-shrink: 0;
+}
 .hero-img {
-  max-width: 75%;
+  max-width: 100%;
 }
 @media (min-width: 900px) {
   .hero-img {
@@ -262,6 +265,12 @@ h6 {
 }
 hr {
   margin: 1rem 0;
+}
+a[href] {
+  color: initial;
+}
+a[href]:visited {
+  color: var(--black);
 }
 /* QUOTES
 *************/
