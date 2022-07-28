@@ -112,11 +112,15 @@ main .hero {
   main .hero {
     align-items: center;
     flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  main .hero {
+    margin-bottom: calc(var(--scale5) * 1rem);  
     padding-top: calc(var(--scale5) * 1rem);
   }
 }
 .hero__right {
-  /* background-color: #bd7e1e; */
   aspect-ratio: 1;
   width: 100%;
 }
@@ -129,6 +133,7 @@ main .hero {
   flex-shrink: 0;
 }
 .hero-img {
+  height: auto;
   margin-left: -6%;
   max-width: 112%;
 }
@@ -143,6 +148,15 @@ main .hero {
 }
 .img {
   max-width: 100%;
+  height: auto;
+}
+img.lazyloading {
+  animation: loading 3s infinite ease-in-out;
+}
+@keyframes loading {
+  0% { opacity: 100%; }
+  50% { opacity: 50%; }
+  100% { opacity: 100%; }
 }
 .squiggle {
   max-width: 15rem;
