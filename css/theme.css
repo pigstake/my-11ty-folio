@@ -11,8 +11,8 @@
   --scale6: 4.768;
   --scale7: 5.96;
   /* Colors */
-  --c-black: black;
-  --c-white: white;
+  --c-black: #19121D;
+  --c-white: #FFFDFB;
   --c-gradient1: #FEF5D3;
   --c-gradient2: #FFD0E0;
   --c-border1: #D5B9B2;
@@ -25,12 +25,7 @@ html,
 body {
   font-family: var(--font-family);
 }
-
-/* Site border effect
-**********************/
 html {
-  /* background: hsla(13, 100%, 40%, 1); */
-  /* border: solid 1.618rem var(--c-black); */
   font-size: 1rem;
 }
 @media screen and (min-width: 320px) {
@@ -44,9 +39,7 @@ html {
   }
 }
 body {
-  /* border-radius: 0 2.618rem 0 0;
-  box-shadow: 0 0 1.618rem --c-gradient1; */
-  color: black; /* #D4FFFF; */
+  color: var(--c-black); /* #D4FFFF; */
   line-height: var(--scale2);
   padding: 0 1rem; /* calc(var(--scale2) * 1rem) PREVIOUS TOP/BOTTOM */
 }
@@ -60,42 +53,10 @@ body {
     padding: 0 calc(var(--scale3) * 1rem); /* calc(var(--scale5) * 1rem) */
   }
 }
-
-/* Body gradient
-****************/
 body,
 header {
-  background-color: #FDFDFD;
-  /* animation: body-gradient 13s ease infinite; */
-  /* background: linear-gradient(-45deg, var(--c-gradient1), var(--c-gradient2));
-	background-size: 300% 100%; */
-  /* radial background */
-  /* background: hsla(0, 0%, 100%, 1);
-  background: radial-gradient(circle, #FAFFFF 78%, hsla(13, 100%, 94%, 1) 78%, hsla(66, 100%, 81%, 1) 79%, hsla(0, 0%, 100%, 1) 80%);
-  background: -moz-radial-gradient(circle, #FAFFFF 78%, hsla(13, 100%, 94%, 1) 78%, hsla(66, 100%, 81%, 1) 79%, hsla(0, 0%, 100%, 1) 80%);
-  background: -webkit-radial-gradient(circle, #FAFFFF 78%, hsla(13, 100%, 94%, 1) 78%, hsla(66, 100%, 81%, 1) 79%, hsla(0, 0%, 100%, 1) 80%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FFE5DE", GradientType=1 ); */
-  /* background: hsla(13, 100%, 40%, 1);
-  background: linear-gradient(135deg, hsla(181, 77%, 25%, 1) 33%, hsla(5, 100%, 81%, 1) 33%, hsla(5, 100%, 81%, 1) 66%, hsla(13, 100%, 40%, 1) 66%, hsla(13, 100%, 40%, 1) 100%);
-  background: -moz-linear-gradient(135deg, hsla(181, 77%, 25%, 1) 33%, hsla(5, 100%, 81%, 1) 33%, hsla(5, 100%, 81%, 1) 66%, hsla(13, 100%, 40%, 1) 66%, hsla(13, 100%, 40%, 1) 100%);
-  background: -webkit-linear-gradient(135deg, hsla(181, 77%, 25%, 1) 33%, hsla(5, 100%, 81%, 1) 33%, hsla(5, 100%, 81%, 1) 66%, hsla(13, 100%, 40%, 1) 66%, hsla(13, 100%, 40%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CC2C00", endColorstr="#0F7173", GradientType=1 );
-  background-size: 800% 100%;
-  background-attachment: fixed; */
-  /* background-position: center;
-	height: 100vw; /* need % for html border style */
+  background-color: var(--c-white);
 }
-/* @keyframes body-gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
 main {
   padding-top: 0;
 }
@@ -106,7 +67,6 @@ main .hero {
   flex-direction: column;
   margin-bottom: calc(var(--scale7) * 1rem);
   padding-top: calc(var(--scale7) * 1rem);
-  /* text-align: center; */
 }
 @media (min-width: 900px) {
   main .hero {
