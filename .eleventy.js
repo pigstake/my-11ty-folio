@@ -5,26 +5,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const { JSDOM } = require('jsdom');
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addTransform(
-    'lazy-load-images',
-    (content, outputPath) => {
-      if (outputPath.endsWith('.html')) {
-        const dom = new JSDOM(content)
-        const document = dom.window.document
-        const [...images] = document.getElementsByTagName(
-          'img'
-        )
-        images.forEach((image) => {
-          image.setAttribute('loading', 'lazy')
-        })
-        return document.documentElement.outerHTML
-      } else {
-        return content
-    }
-  })
 
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");

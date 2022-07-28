@@ -116,6 +116,7 @@ main .hero {
   }
 }
 .hero__right {
+  /* background-color: #bd7e1e; */
   aspect-ratio: 1;
   width: 100%;
 }
