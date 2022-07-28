@@ -1,13 +1,53 @@
 ---
 layout: layouts/home.njk
 ---
-<div>
-  {% set maxPosts = collections.posts.length | min(3) %}
-  <h2>{% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} recent works{% endif %}</h2>
 
-  {% set postslist = collections.posts | head(-3) %}
-  {% set postslistCounter = collections.posts | length %}
-  {% include "postslist.njk" %}
-
-  <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<div class='hero' id='bad-rhyme-joke'>
+  <h1 class='hero-heading'>web design<br/>since 2009*</h1>
+  <div class='hero__right'>
+    <img
+      class='hero-img'
+      src='img/workspace-@720.png'
+      srcset='img/workspace-@720.png 720w,
+              img/workspace-@1280.png 1280w,
+              img/workspace-@1920.png 1920w,
+              img/workspace-@2560.png 2560w'
+      sizes='(min-width:320px) 100vw,
+              (min-width:900px) 50vw'
+      alt='Aerial view of a laptop, a cup of tea, eyeglasses, and headphones resting on a glass coffee table above a green Persion rug'
+    />
+  </div>
+</div>
+<div class='usual-bottom'>
+  <p>Hi, I’m Jamie. Career-wise, I’m honing my leadership skills now. Recently, I managed a team of 10 product designers at the product consultancy Philosophie. I currently mentor three students enrolled in the UX/UI course at Springboard.</p>
+  <p><a href='https://www.linkedin.com/in/jamisoncaloras/'>Contact me about work on LinkedIn.</a> I mostly <a href='https://twitter.com/pigstake/likes'>like animal photos on Twitter</a> these days. That might be just what you need.</a></p>
+</div>
+<div class='usual-bottom'>
+  <div class='usual-bottom'>
+    <img src='img/squiggle-02.svg' class='squiggle' alt="An outline squiggle that Jamie quickly traced from his green Persion rug" />
+    <h2>I build trust and pull teams forward.</h2>
+  </div>
+  <div class='usual-bottom'>
+    <p class="quote"><q>He’s fostered a safe space where designers can speak candidly about their struggles. Coupled with his extensive design knowledge, helpful critiques, and probing questions, he consistently challenges us to think beyond the box.</q></p>
+    <p class="quote__byline">– Farica Carroll, Senior Product Designer @ Philosophie</p>
+  </div>
+  <div class='usual-bottom'>
+    <p class="quote"><q>...he gave me the independence to explore new ideas and validate them with user testing in a fast-paced environment.</q></p>
+    <p class="quote__byline">– Agustin Luque, Product Designer @ Philosophie</p>
+  </div>
+  <img src='img/squiggle-03.svg' class='squiggle' alt="An outline squiggle that Jamie quickly traced from his green Persion rug" />
+</div>
+<div class='usual-bottom'>
+  <p>100% not my red Delorean. Thanks for visiting, time traveler!</p>
+  <img
+    class='hero-img'
+    src='img/delorean-@720.png'
+    srcset='img/delorean-@720.png 720w,
+            img/delorean-@1280.png 1280w,
+            img/delorean-@1920.png 1920w,
+            img/delorean-@2560.png 2560w'
+    sizes='(min-width:320) 100vw'
+    alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  />
+  <p><a href="#bad-rhyme-joke">*100% intentional rhyme and reason</a></p>
 </div>
