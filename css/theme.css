@@ -80,10 +80,6 @@ main .hero {
     padding-top: calc(var(--scale5) * 1rem);
   }
 }
-.hero__right {
-  aspect-ratio: 1;
-  width: 100%;
-}
 @media (min-width: 900px) {
   .hero__right {
     width: 50%;
@@ -93,30 +89,64 @@ main .hero {
   flex-shrink: 0;
   margin-right: 1rem;
 }
-.hero-img {
-  height: auto;
-  margin-left: -6%;
-  max-width: 112%;
-}
-@media (min-width: 900px) {
-  .hero-img {
-    margin-left: 0;
-    max-width: 100%;
-  }
-}
 .usual-bottom {
   margin-bottom: calc(var(--scale7) * 1rem);
+}
+/* Image considerations
+********/
+.hero__right,
+.car-garage {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.hero__right {
+  aspect-ratio: 1;
+  background-image: url(../img/squiggle-mask-01.svg);
+  margin-left: -6%;
+  width: 112%;
+}
+@media (min-width: 900px) {
+  .hero__right {
+    background-image: url(../img/squiggle-mask-01.svg);
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.car-garage {
+  background-image: url(../img/squiggle-mask-02.svg);
+}
+@media (min-width: 900px) {
+  .car-garage {
+    max-width: 720px;
+  }
+}
+.hero-img,
+.img {
+  height: auto;
+  max-width: 100%;
+}
+.hero-img {
+  margin-left: -1.25%;
 }
 .img {
   max-width: 100%;
   height: auto;
 }
+img.lazyload,
 img.lazyloading {
-  animation: loading 3s infinite ease-in-out;
+  visibility: hidden;
 }
+img.lazyloaded {
+  animation: loaded 400ms ease-in;
+}
+
 @keyframes loading {
-  0% { opacity: 100%; }
+  0% { opacity: 75%; }
   50% { opacity: 50%; }
+  100% { opacity: 75%; }
+}
+@keyframes loaded {
+  0% { opacity: 0%; }
   100% { opacity: 100%; }
 }
 .squiggle {
