@@ -125,9 +125,6 @@ main .hero {
   height: auto;
   max-width: 100%;
 }
-.hero-img {
-  margin-left: -1.25%;
-}
 .img {
   max-width: 100%;
   height: auto;
