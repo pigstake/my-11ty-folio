@@ -1,10 +1,10 @@
 ---
-title: Managing design team skills
-description:
-date: 2021-09-30
-year: 2021
-timeline: 9 months
-client: Philosophie
+title: Early stage fintech startup experiments
+description: This is a post on My Blog about win-win survival strategies.
+date: 2019-10-30
+year: 2019
+timeline: 4 weeks
+client: Benjamin
 tags:
 layout: layouts/work.njk
 ---

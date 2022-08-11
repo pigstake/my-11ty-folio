@@ -2,9 +2,11 @@
 title: Badger
 description: Like personal health data, but for work.
 date: 2016-04-04
+year: 2016
+timeline: 3 months
+client: PwC & Sky Cable
 tags:
-  - number 2
-layout: layouts/post.njk
+layout: layouts/work.njk
 ---
 
 

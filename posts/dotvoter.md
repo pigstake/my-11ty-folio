@@ -2,9 +2,11 @@
 title: Dotvoter
 description: A voting app
 date: 2017-06-01
+year: 2017
+timeline: 9 months
+client: Philosophie
 tags:
-  - another tag
-layout: layouts/post.njk
+layout: layouts/work.njk
 ---
 
 ##### Converge, diverge, and save sticky notes

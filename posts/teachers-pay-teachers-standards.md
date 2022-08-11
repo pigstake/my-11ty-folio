@@ -1,9 +1,12 @@
 ---
-title: Curating Content, Teachers Pay Teachers
-description: This is a post on My Blog about touchpoints and circling wagons.
+title: Teachers searching for content
+description: This is a post on My Blog about win-win survival strategies.
 date: 2020-05-30
-tags: second tag
-layout: layouts/post.njk
+year: 2020
+timeline: 3 months
+client: Teachers Pay Teachers
+tags:
+layout: layouts/work.njk
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

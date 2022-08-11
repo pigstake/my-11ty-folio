@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "eleventy": "^1.0.6",
+    "eleventy-favicon": "^1.1.3",
     "jsdom": "^20.0.0"
   }
 }
