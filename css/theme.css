@@ -1,6 +1,8 @@
-/*** Theme settings */
+/**********
+Theme settings
+**************/
 :root {
-  --font-family: -apple-system, system-ui, sans-serif; /*'Space Grotesk', 'DM Sans', */
+  --font-family: 'Space Grotesk', -apple-system, system-ui, sans-serif;
   /* Modular scale values (Major Third 1.25) */
   --scale-1: 0.8;
   --scale0: 1;
@@ -13,13 +15,29 @@
   --scale7: 4.768;
   --scale8: 5.96;
   --scale9: 7.451;
+  --scale10: 9.313;
   /* Colors */
   --c-black: #19121D;
   --c-white: #FFFDFB;
   --c-green: #046243;
   --c-orange: #EB4511;
 }
+/**********
+typeface
+**********/
+/* @font-face {
+  font-family: Figtree;
+  src: url('fonts/Figtree-Regular.woff2') format('woff2'),
+       url('fonts/Figtree-Regular.woff') format('woff');
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: Figtree;
+  src: url('fonts/Figtree-Bold.woff2') format('woff2'),
+       url('fonts/Figtree-Bold.woff') format('woff');
+  font-weight: 700;
+} */
 /********
 Theme styles
 ******************/
@@ -44,26 +62,38 @@ body {
   color: var(--c-black); /* #D4FFFF; */
   line-height: var(--scale2);
 }
-body,
-header {
-  padding: 0 calc(var(--scale3) * 1rem); /* calc(var(--scale3) * 1rem) PREVIOUS TOP/BOTTOM */
+header,
+.hero,
+.tmpl-home > .usual-bottom,
+main:not(.tmpl-home) {
+  padding-left: calc(var(--scale3) * 1rem);
+  padding-right: calc(var(--scale3) * 1rem); /* calc(var(--scale3) * 1rem) PREVIOUS TOP/BOTTOM */
 }
 @media (min-width: 600px) {
-  body,
-  header {
-    padding: 0 calc(var(--scale5) * 1rem); /* calc(var(--scale4) * 1rem) */
+  header,
+  .hero,
+  .tmpl-home > .usual-bottom,
+  main:not(.tmpl-home) {
+    padding-left: calc(var(--scale5) * 1rem);
+    padding-right: calc(var(--scale5) * 1rem); /* calc(var(--scale4) * 1rem) */
   }
 }
 @media (min-width: 900px) {
-  body,
-  header {
-    padding: 0 calc(var(--scale7) * 1rem); /* calc(var(--scale6) * 1rem) */
+  header,
+  .hero,
+  .tmpl-home > .usual-bottom,
+  main:not(.tmpl-home) {
+    padding-left: calc(var(--scale7) * 1rem);
+    padding-right: calc(var(--scale7) * 1rem); /* calc(var(--scale6) * 1rem) */
   }
 }
 @media (min-width: 1200px) {
-  body,
-  header {
-    padding: 0 calc(var(--scale9) * 1rem); /* calc(var(--scale6) * 1rem) */
+  header,
+  .hero,
+  .tmpl-home > .usual-bottom,
+  main:not(.tmpl-home) {
+    padding-left: calc(var(--scale9) * 1rem);
+    padding-right: calc(var(--scale9) * 1rem); /* calc(var(--scale6) * 1rem) */
   }
 }
 body,
@@ -122,6 +152,13 @@ main .hero {
 .usual-bottom {
   margin-bottom: calc(var(--scale8) * 1rem);
 }
+/* .highlighted-bottom {
+  background-image: url(../../img/squiggle-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 3rem;
+} */
 /******
 Image considerations
 ********/
@@ -174,7 +211,7 @@ img.lazyloaded {
   100% { opacity: 100%; }
 }
 .squiggle {
-  margin-left: -7vw;
+  margin-left: -6vw;
   max-width: 15rem;
   position: relative;
   z-index: 2;
@@ -216,7 +253,7 @@ header {
   padding-left: 0;
 }
 a[href].logo__link,
-.nav-item > a[href]:visited {
+.nav-item > a[href] {
   color: var(--c-black);
 }
 .nav {
@@ -231,10 +268,12 @@ a[href].logo__link,
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  right: calc(var(--scale6) * -1rem);
+  height: calc(var(--scale10) * 1rem);
+  width: calc(var(--scale10) * 1rem);
+  left: calc(var(--scale4) * -1rem);
+  top: calc(var(--scale6) * -1rem);
   visibility: hidden;
+  z-index: -1;
 }
 .nav-item.nav-item-active::before {
   visibility: visible;
@@ -256,20 +295,30 @@ h1:not(.logo) {
     font-size: calc(var(--scale6) * 1rem);;
   }
 }
-h2,
-h3 {
+h2 {
   font-size: calc(var(--scale2) * 1rem);
 }
 @media (min-width: 600px) {
-  h2,
-  h3 {
+  h2 {
     font-size: calc(var(--scale3) * 1rem);
   }
 }
 @media (min-width: 1200px) {
-  h2,
-  h3 {
+  h2 {
     font-size: calc(var(--scale4) * 1rem);
+  }
+}
+h3 {
+  font-size: calc(var(--scale1) * 1rem);
+}
+@media (min-width: 600px) {
+  h3 {
+    font-size: calc(var(--scale2) * 1rem);
+  }
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: calc(var(--scale3) * 1rem);
   }
 }
 h4 {
@@ -282,9 +331,10 @@ h6 {
   font-size: calc(var(--scale0) * 1rem);
 }
 h1:not(.logo),
-h2 {
+h2,
+h3 {
   /* letter-spacing: -1.618px; */
-  line-height: 1.25;
+  line-height: var(--scale1);
 }
 h1,
 h2,
@@ -312,16 +362,32 @@ q {
 }
 q::before {
   content: open-quote;
+  font-size: calc(var(--scale3) * 1rem);
+  line-height: 0;
 }
 q::after {
   content: close-quote;
 }
 .quote {
-  /* font-size: calc(var(--scale1) * 1rem); */
+  font-size: calc(var(--scale1) * 1rem);
+  font-weight: 500;
+  position: relative;
+  text-indent: -0.9rem;
 }
-.quote__byline {
+.quote::before {
+  background-image: url(../../img/squiggle-quote.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: calc(var(--scale9) * 1rem);
+  position: absolute;
+  right: 103%;
+  width: calc(var(--scale9) * 1rem);
+  z-index: 2;
+}
+/* .quote__byline {
   font-style: italic;
-}
+} */
 /*********
 WORK LIST
 **********/
@@ -330,13 +396,13 @@ WORK LIST
   padding: 0;
 }
 .worklist-item {
-  margin-bottom: calc(var(--scale1) * 1rem);
-}
-.worklist-item {
   font-size: calc(var(--scale1) * 1rem);
+  font-weight: 700;
+  margin-bottom: calc(var(--scale1) * 1rem);
 }
 .worklist-details {
   font-size: calc(var(--scale-1) * 1rem);
+  font-weight: normal;
   margin-top: 0;
 }
 .postlist-link {
