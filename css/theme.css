@@ -25,19 +25,24 @@ Theme settings
 /**********
 typeface
 **********/
-/* @font-face {
-  font-family: Figtree;
-  src: url('fonts/Figtree-Regular.woff2') format('woff2'),
-       url('fonts/Figtree-Regular.woff') format('woff');
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+       url('fonts/SpaceGrotesk-Regular.woff') format('woff');
   font-weight: 400;
 }
-
 @font-face {
-  font-family: Figtree;
-  src: url('fonts/Figtree-Bold.woff2') format('woff2'),
-       url('fonts/Figtree-Bold.woff') format('woff');
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+       url('fonts/SpaceGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+       url('fonts/SpaceGrotesk-Bold.woff') format('woff');
   font-weight: 700;
-} */
+}
 /********
 Theme styles
 ******************/
@@ -260,6 +265,7 @@ a[href].logo__link,
   padding-right: 0;
 }
 .nav-item {
+  font-weight: 500;
   position: relative;
 }
 .nav-item::before {
