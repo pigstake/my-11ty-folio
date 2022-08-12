@@ -17,7 +17,7 @@ Theme settings
   --scale9: 7.451;
   --scale10: 9.313;
   /* Colors */
-  --c-black: #19121D;
+  --c-black: #190A21;
   --c-white: #FFFDFB;
   --c-green: #046243;
   --c-orange: #EB4511;
@@ -183,7 +183,7 @@ Image considerations
   .hero__right {
     background-image: url(../img/squiggle-mask-01.svg);
     margin-left: 0;
-    width: 100%;
+    background-size: 107%;
   }
 }
 .car-garage {
@@ -194,9 +194,10 @@ Image considerations
   height: auto;
   max-width: 100%;
 }
-.img {
-  max-width: 100%;
-  height: auto;
+@media (min-width: 900px) {
+  .hero-img {
+    max-width: 107%;
+  }
 }
 img.lazyload,
 img.lazyloading {
@@ -267,6 +268,7 @@ a[href].logo__link,
 .nav-item {
   font-weight: 500;
   position: relative;
+  z-index: 1;
 }
 .nav-item::before {
   content: '';
@@ -338,7 +340,8 @@ h6 {
 }
 h1:not(.logo),
 h2,
-h3 {
+h3,
+h4 {
   /* letter-spacing: -1.618px; */
   line-height: var(--scale1);
 }
@@ -402,9 +405,12 @@ WORK LIST
   padding: 0;
 }
 .worklist-item {
-  font-size: calc(var(--scale1) * 1rem);
-  font-weight: 700;
+  /* font-size: calc(var(--scale1) * 1rem); */
   margin-bottom: calc(var(--scale1) * 1rem);
+}
+.worklist-heading {
+  /* font-weight: 500; */
+  margin-bottom: 0;
 }
 .worklist-details {
   font-size: calc(var(--scale-1) * 1rem);

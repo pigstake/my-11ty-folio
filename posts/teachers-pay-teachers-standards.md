@@ -1,5 +1,5 @@
 ---
-title: Teachers searching for content
+title: Helping teachers find the right material
 description: This is a post on My Blog about win-win survival strategies.
 date: 2020-05-30
 year: 2020

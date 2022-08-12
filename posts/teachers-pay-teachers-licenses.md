@@ -1,5 +1,5 @@
 ---
-title: School administrators managing content licenses
+title: Scaling a B2B education content marketplace
 description: This is a post on My Blog about win-win survival strategies.
 date: 2020-08-30
 year: 2020
