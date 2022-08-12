@@ -1,5 +1,5 @@
 ---
-title: Quick playful digital rebrand
+title: Quick playful digital brand identity
 description: This is a post on My Blog about win-win survival strategies.
 date: 2019-05-30
 year: 2019

@@ -10,7 +10,7 @@ tags:
 layout: layouts/work.njk
 ---
 <h3>Summary</h3>
-<p>Teachers Pay Teachers (TPT) operated a two-sided marketplace in which teachers buy and sell teaching materials. A few months before I joined, TPT launched a B2B service, selling subscriptions to schools. These schools pay for access to bundles of content and, in turn, provide licenses to this content to teachers. One outcome of this B2B subscription is that teachers do not have to pay for these teaching materials out-of-pocket.</p>
+<p>Teachers Pay Teachers (TPT) provides a two-sided marketplace in which teachers buy and sell teaching materials. A few months before I joined, TPT launched a B2B service, selling subscriptions to schools. These schools pay for access to bundles of content and, in turn, provide licenses to this content to teachers. One outcome of this B2B subscription is that teachers do not have to pay for these teaching materials out-of-pocket.</p>
 <p>The purpose of this work was to allow school administrators to manage their content licenses, and how they distribute the licenses to teachers. Until this feature, school administrators would contact their TPT account manager, who would then need to adjust licenses in a back-of-house interface.</p>
 
 <h3>Work artifacts</h3>

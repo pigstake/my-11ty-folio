@@ -10,7 +10,7 @@ tags:
 layout: layouts/work.njk
 ---
 <h3>Summary</h3>
-<p>Teachers Pay Teachers (TPT) operated a two-sided marketplace in which teachers buy and sell teaching materials. A few months before I joined, TPT launched a B2B service, selling subscriptions to schools. These schools must meet specific curriculum standards. Teachers, therefore, must use teaching materials that meet those curriculum standards.</p>
+<p>Teachers Pay Teachers (TPT) provides a two-sided marketplace in which teachers buy and sell teaching materials. A few months before I joined, TPT launched a B2B service, selling subscriptions to schools. These schools must meet specific curriculum standards. Teachers, therefore, must use teaching materials that meet those curriculum standards.</p>
 <p>The purpose of this work was to allow teachers to more easily find material that meets their school‘s curriculum standards.</p>
 
 <h3>Work artifacts</h3>
