@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
 
   // Lazy Loading Plugin
   eleventyConfig.addPlugin(lazyImagesPlugin, {
-    imgSelector: '.hero-img, .img', // custom image selector
+    imgSelector: '.hero-img, .img, .post-img', // custom image selector
   });
 
   // Copy the `img` and `css` folders to the output
