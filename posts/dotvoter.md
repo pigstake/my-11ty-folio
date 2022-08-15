@@ -44,23 +44,23 @@ Dotvoter transformed Philosophie culture. The CEO uses it during company-wide me
   class='post-img'
   src='../../img/dotvoter/ux-strategy.png'
   srcset=''
-  alt='Non-mobile homepage design'
+  alt='Personas and competitive analysis'
 />
 <img
   class='post-img'
   src='../../img/dotvoter/whiteboard-sketch.jpg'
   srcset=''
-  alt='Non-mobile homepage design'
+  alt='Whiteboard sketch'
 />
 <img
   class='post-img'
   src='../../img/dotvoter/impact-effort.jpg'
   srcset=''
-  alt='Non-mobile homepage design'
+  alt='2x2 impact effort matrix'
 />
 <img
   class='post-img'
   src='../../img/dotvoter/task-flow.jpg'
   srcset=''
-  alt='Non-mobile homepage design'
+  alt='Task flow sketch'
 />

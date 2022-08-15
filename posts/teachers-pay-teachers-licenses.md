@@ -19,95 +19,95 @@ layout: layouts/work.njk
   class='post-img'
   src='../../img/tpt/licenses/context.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/flow-thinking.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/lofi-vision.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/theme-variations.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/interface-writing.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/logical-scenarios.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/scenario-decision.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/scenario-decision-flexible-to-custom.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/responsive-layouts.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/admin-flow.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/admin-questions.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/final-teacher.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/final-responsive.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/final-admin.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/final-admin-zoom-01.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
 <img
   class='post-img'
   src='../../img/tpt/licenses/final-admin-zoom-02.png'
   srcset=''
-  alt='A red DMC Delorean parked in Astoria that Jamie claims to not own.'
+  alt='Figma screenshot of design work'
 />
