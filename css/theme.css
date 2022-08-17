@@ -49,6 +49,7 @@ Theme styles
 ******************/
 html,
 body {
+  font-display: swap;
   font-family: var(--font-family);
 }
 html {
