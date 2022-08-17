@@ -192,6 +192,11 @@ Image considerations
     background-size: 107%;
   }
 }
+@media (min-width: 1920px) {
+  .hero__right {
+    background-size: 100%;
+  }
+}
 .car-garage {
   background-image: url(../img/squiggle-mask-02.svg);
 }
