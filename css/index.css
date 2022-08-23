@@ -124,16 +124,16 @@ code {
 /* Header */
 .logo,
 .nav {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   margin: .5rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
 }
 .logo :link:not(:hover) {
   text-decoration: none;
 }
-.logo {
+/* .logo {
   float: left;
-}
+} */
 /* Nav */
 .nav {
   list-style: none;

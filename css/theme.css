@@ -264,17 +264,11 @@ header {
     border-top: 0;
   }
 }
-.logo {
-  padding-left: 0;
-}
 a[href].logo__link,
 a[href].logo__link:visited,
 .nav-item > a[href],
 .nav-item > a[href]:visited {
   color: var(--c-black);
-}
-.nav {
-  padding-right: 0;
 }
 .nav-item {
   font-weight: 500;
@@ -408,8 +402,8 @@ q::after {
   position: relative;
   text-indent: -0.9rem;
 }
-.quote::before {
-  background-image: url(../../img/squiggle-quote.svg);
+.tmpl-home .quote::before {
+  background-image: url(../../img/squiggle-quote-01.svg);
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
@@ -419,9 +413,14 @@ q::after {
   width: calc(var(--scale9) * 1rem);
   z-index: 2;
 }
-/* .quote__byline {
-  font-style: italic;
-} */
+.tmpl-home .quote:nth-of-type(2)::before {
+  background-image: url(../../img/squiggle-quote-2.svg);
+}
+@media (min-width: 600px) {
+  .tmpl-home .quote::before {
+    right: 105%;
+  }
+}
 /*********
 WORK LIST
 **********/

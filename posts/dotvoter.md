@@ -10,7 +10,7 @@ tags:
 layout: layouts/work.njk
 ---
 
-### Converge, diverge, and save sticky notes
+### Diverge. Converge. Save sticky notes.
 Tired of crowding around a wall with your team to place dot votes? Ever need to include remote teammates? Product consulting teams at Philosophie had problems like this almost every day. I led the design and development of Dotvoter to solve those problems.
 
 ### Avoid groupthink!
