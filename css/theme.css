@@ -20,7 +20,7 @@ Theme settings
   --c-black: #2D1D20;
   --c-white: #FFFDFB;
   --c-green: #005E3F;
-  --c-orange: #EB4511;
+  --c-orange: #FF715B;
   --c-purple: #3C2E85;
 }
 /**********
@@ -388,9 +388,13 @@ q {
   quotes: "“" "”" "‘" "’";
 }
 q::before {
+  color: var(--c-orange);
   content: open-quote;
-  font-size: calc(var(--scale3) * 1rem);
-  line-height: 0;
+  font-size: calc(var(--scale6) * 1rem);
+  font-weight: 400;
+  left: calc(var(--scale3) * -1rem);
+  line-height: calc(var(--scale5) * 1rem);
+  position: absolute;
 }
 q::after {
   content: close-quote;
@@ -399,26 +403,7 @@ q::after {
   font-size: calc(var(--scale1) * 1rem);
   font-weight: 500;
   position: relative;
-  text-indent: -0.9rem;
-}
-.tmpl-home .quote::before {
-  background-image: url(../../img/squiggle-quote-01.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: '';
-  height: calc(var(--scale9) * 1rem);
-  position: absolute;
-  right: 103%;
-  width: calc(var(--scale9) * 1rem);
-  z-index: 2;
-}
-.tmpl-home .quote:nth-of-type(2)::before {
-  background-image: url(../../img/squiggle-quote-2.svg);
-}
-@media (min-width: 600px) {
-  .tmpl-home .quote::before {
-    right: 105%;
-  }
+  /* text-indent: -0.9rem; */
 }
 /*********
 WORK LIST
