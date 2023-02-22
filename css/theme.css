@@ -231,7 +231,6 @@ img.lazyloaded {
   margin-left: -6vw;
   max-width: 15rem;
   position: relative;
-  z-index: 2;
 }
 .has-fancy-border {
   border: solid 0.25rem gold;
@@ -439,6 +438,9 @@ WORK LIST
   font-weight: normal;
   margin-top: 0;
 }
+.worklist-details--top {
+  font-weight: 500;
+}
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
@@ -469,6 +471,7 @@ POSTS
   font-weight: 500;
 }
 .post-img {
+  border: solid 2px var(--c-black);
   max-width: calc(100vw - calc(var(--scale3) * 1rem * 2));
 }
 @media (min-width: 600px) {

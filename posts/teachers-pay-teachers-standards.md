@@ -1,26 +1,35 @@
 ---
 title: Helping teachers find the right material
 description: This is a post on My Blog about win-win survival strategies.
-date: 2020-05-30
+date: 2020-08-30
 year: 2020
 timeline: 3 months
 client: Teachers Pay Teachers
-role: Interaction & interface design, Design system management, Creative workshop facilitation
+skills: Interaction & interface design, UX research, Design system management, Creative workshop facilitation
+role: Senior Product Designer
 tags:
 layout: layouts/work.njk
 ---
-<h3>Summary</h3>
-<p>Teachers Pay Teachers (TPT) provides a two-sided marketplace in which teachers buy and sell teaching materials. A few months before I joined, TPT launched a B2B service, selling subscriptions to schools. These schools must meet specific curriculum standards. Teachers, therefore, must use teaching materials that meet those curriculum standards.</p>
-<p>The purpose of this work was to allow teachers to more easily find material that meets their school’s curriculum standards.</p>
+<img
+  class='post-img'
+  src='../../img/tpt/standards/hero.png'
+  srcset=''
+  alt='Figma screenshot of design work'
+/>
+<h3>Customer problem and business outcome</h3>
+<p>Teachers Pay Teachers (TPT) is a two-sided marketplace for teachers to buy and sell materials. A few months before I joined, TPT launched a B2B service, selling subscriptions to schools. These schools must meet specific curriculum standards. Teachers, in turn, must use teaching materials that meet those curriculum standards.</p>
+<p>Teachers struggled to find the right content, though. This was an impactful and urgent opportunity that I helped define with research. Before the new school year started, I designed and helped launch major redesigns to the search and discovery experience. This new teacher experience helped improve B2B acquisition and retention.</p>
 
 <h3>Work artifacts</h3>
-<p>These are unaltered Figma screenshots of my work in-progress, from setting initial constraints to final designs.</p>
+<h4>Mapping solutions to our target opportunity</h4>
+<p>The product manager and I managed an opportunity solution tree across our product scope. From that map, we prioritized potential solutions for this opportunity with other teammates. I facilitated workshops to help the team visualize these possibilities, so we could better decide and move forward together. I provided an overview and hub for the team in Figma that helped us stay focused, which you can see here. </p>
 <img
   class='post-img'
   src='../../img/tpt/standards/context.png'
   srcset=''
   alt='Figma screenshot of design work'
 />
+<h4>Exploring concepts and the limits of our UI patterns</h4>
 <img
   class='post-img'
   src='../../img/tpt/standards/first-round-filter-sort.png'
@@ -39,6 +48,8 @@ layout: layouts/work.njk
   srcset=''
   alt='Figma screenshot of design work'
 />
+<h4>Running experiments and applying research insights</h4>
+<p>I defined research goals and facilitated user interviews for both generative and evaluative studies. We ran small sample size studies every two weeks. I also analyzed funnel data and planned multivariate tests.</p>
 <img
   class='post-img'
   src='../../img/tpt/standards/second-round.png'
@@ -75,6 +86,7 @@ layout: layouts/work.njk
   srcset=''
   alt='Figma screenshot of design work'
 />
+<h4>Communicating with engineers and sequencing launch</h4>
 <img
   class='post-img'
   src='../../img/tpt/standards/launch-sequence.png'

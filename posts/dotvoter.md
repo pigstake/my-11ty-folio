@@ -5,7 +5,8 @@ date: 2017-06-01
 year: 2017
 timeline: 9 months
 client: Philosophie
-role: Interaction & interface design, Research, Product strategy, Front-end coding
+skills: Interaction & interface design, Research, Product strategy, Front-end coding
+role: Product Designer & Product Manager
 tags:
 layout: layouts/work.njk
 ---

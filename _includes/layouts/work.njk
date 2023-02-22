@@ -8,7 +8,7 @@ templateClass: tmpl-work
   <p class='post-details__copy'>
     <span class='post-details__label'>For:</span> <span class='post-details__data'>{{ client }}</span><br>
     <span class='post-details__label'>Timeline:</span> <span class='post-details__data'>{{ timeline }} in {{ year }}</span><br>
-    <span class='post-details__label'>My skills:</span> <span class='post-details__data'>{{ role }}</span>
+    <span class='post-details__label'>My skills:</span> <span class='post-details__data'>{{ skills }}</span>
   </p>
 </div>
 {%- for tag in tags | filterTagList -%}

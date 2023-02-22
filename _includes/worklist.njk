@@ -2,11 +2,10 @@
 {% for post in postslist | reverse %}
   <li class="worklist-item{% if post.url == url %} worklist-item-active{% endif %}">
     <h4 class='worklist-heading'><a href="{{ post.url | url }}" class="worklist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h4>
-    <p class="worklist-details">{{ post.data.client }} / {{ post.data.year }}</p>
-    {% for tag in post.data.tags | filterTagList %}
-      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-    {% endfor %}
+    <p class="worklist-details"><span class="worklist-details--top">{{ post.data.client }} / {{ post.data.year }}</span>
+    <br />
+    {{ post.data.role }}
+    </p>
   </li>
 {% endfor %}
 </ol>

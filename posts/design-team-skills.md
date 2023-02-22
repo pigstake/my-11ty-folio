@@ -1,11 +1,12 @@
 ---
-title: Growing an impactful remote design team
+title: Growing an impactful remote design team (coming soon!)
 description:
 date: 2021-09-30
-year: 2021 (Coming soon)
+year: 2022
 timeline: 9 months
 client: Philosophie
-role: Design leadership, Design strategy, Team design & Hiring
+skills: Design leadership, Design strategy, Team design & Hiring
+role: Head of Design
 tags:
 layout: layouts/work.njk
 ---
