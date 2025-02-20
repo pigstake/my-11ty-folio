@@ -1,5 +1,5 @@
 ---
-title: Growing an impactful remote design team (coming soon!)
+title: Growing an impactful remote design team
 description:
 date: 2021-09-30
 year: 2022
