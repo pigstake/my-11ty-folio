@@ -8,8 +8,12 @@ const markdownItAnchor = require("markdown-it-anchor");
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = function(eleventyConfig) {
+  // Copy `img/favicon/` to `_site/`
+  eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
+
+  // Lazy Loading Plugin
   eleventyConfig.addPlugin(lazyImagesPlugin, {
-    imgSelector: '.hero-img, .img', // custom image selector
+    imgSelector: '.hero-img, .img, .post-img', // custom image selector
   });
 
   // Copy the `img` and `css` folders to the output

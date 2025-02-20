@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-work
+---
+<h1>{{ title }}</h1>
+<div class='post-details'>
+  <img src='../../img/squiggle-01.svg' class='squiggle post-details__img' alt="An outline squiggle that Jamie quickly traced from his green Persion rug" />
+  <p class='post-details__copy'>
+    <span class='post-details__label'>For:</span> <span class='post-details__data'>{{ client }}</span><br>
+    <span class='post-details__label'>Timeline:</span> <span class='post-details__data'>{{ timeline }} in {{ year }}</span><br>
+    <span class='post-details__label'>My skills:</span> <span class='post-details__data'>{{ skills }}</span>
+  </p>
+</div>
+{%- for tag in tags | filterTagList -%}
+{%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+{%- endfor %}
+
+{{ content | safe }}
+
+{%- if collections.posts %}
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+<hr>
+<h6>Browse more work</h6>
+<ul class='post-nav'>
+  {%- if nextPost %}<li class='post-nav-item'><span class='post-nav-label'>Next:</span> <a class='post-nav-link' href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+  {%- if previousPost %}<li><span class='post-nav-label'>Previous:</span> <a class='post-nav-link' href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+</ul>
+{%- endif %}
+{%- endif %}

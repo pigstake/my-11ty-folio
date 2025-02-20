@@ -1,0 +1,21 @@
+<ol reversed class="worklist">
+{% for post in postslist | reverse %}
+  <li class="worklist-item{% if post.url == url %} worklist-item-active{% endif %}">
+    <a href="{{ post.url | url }}" class="worklist-link">
+      <img 
+        class='worklist-img'
+        src='../../img/tpt/standards/hero.png'
+        srcset=''
+        alt='Figma screenshot of design work'  
+      />
+      <div class='worklist-copy'>
+        <h4 class='worklist-heading'>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h4>
+        <p class="worklist-details"><span class="worklist-details--top">{{ post.data.client }} / {{ post.data.year }}</span>
+        <br />
+        {{ post.data.role }}
+        </p>
+      </div>
+    </a>
+  </li>
+{% endfor %}
+</ol>

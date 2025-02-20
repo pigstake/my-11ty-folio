@@ -1,15 +1,27 @@
 ---
 layout: layouts/base.njk
-permalink: /posts/
+permalink: /portfolio/
 eleventyNavigation:
-  key: Archive
+  key: Portfolio
   title: Portfolio
   order: 1
 ---
+<div class='hero'>
+  <h6 class='overline'>Recent work</h6>
+  <h1>Portfolio</h1>
+</div>
 
-<h1>Portfolio</h1>
+<div class='usual-bottom'>
+  {% set postslist = collections.posts %}
+  {% include "worklist.njk" %}
+</div>
 
-<p>First scrappy version should be up by the end of this week, 08/12/2022 ish.</p>
+<div class='usual-bottom'>
+  <p class="quote"><q>...I leaned on him not only to level up my skills as a Product Designer, but also for guidance when navigating complex work streams and team dynamics. Jamie was intentional in everything he did — from providing feedback to structuring team meetings to helping his designers build long-term, personal growth plans. Jamie is an exceptional manager, I feel grateful for the time I spent on his team, and can't recommend him highly enough.</q></p>
+  <p class="quote__byline">– Annie Osenbaugh, Senior Product Designer</p>
+</div>
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+<div class='usual-bottom'>
+  <p class="quote"><q>...Jamie gave me the independence to explore new ideas and validate them with user testing in a fast-paced environment.</q></p>
+  <p class="quote__byline">– Agustin Luque, Product Designer</p>
+</div>
