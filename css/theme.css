@@ -262,7 +262,7 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 8;
 }
 .header-content {
   border-top: solid var( --the-thicc) var(--c-black);
@@ -438,18 +438,22 @@ WORK LIST
 .worklist-link {
   text-decoration: none;
   @media (min-width: 900px) {
+    align-items: center;
     display: flex;
   }
 }
 .worklist-link:hover {
-  text-decoration: underline;
-  text-decoration-thickness: var( --the-thicc);
+  cursor: initial;
+  /* text-decoration: underline;
+  text-decoration-thickness: var( --the-thicc); */
 }
-.worklist-img {
+.worklist .post-img {
+  border: none;
   margin-bottom: calc(var(--scale0) * 1rem);
   margin-top: 0;
   width: 100%;
   @media (min-width: 900px) {
+    margin-bottom: 0;
     margin-right: calc(var(--scale1) * 1rem);
     width: 25vw;
   }
@@ -524,4 +528,24 @@ POSTS
 }
 .post-nav-link {
   font-weight: 500;
+}
+.banner {    
+  background-color: var(--c-purple);
+  border-radius: 8px 0 0 8px;
+  top: 1rem;
+  opacity: .9;
+  padding: calc(var(--scale0) * 1rem);
+  position: fixed;
+  right: 0;
+  width: calc(var(--scale10) * 2rem);
+  z-index: 8;
+
+  @media (min-width: 900px) {
+    bottom: 1rem;
+    top: initial;
+  }
+}
+.banner-text {
+  color: white;
+  font-size: calc(var(--scale0) * 1rem);
 }

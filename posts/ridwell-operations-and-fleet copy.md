@@ -12,7 +12,7 @@ layout: layouts/work.njk
 ---
 <img
   class='post-img'
-  src='../../img/tpt/standards/hero.png'
+  src='../../img/ridwell/ridwell-ops-mocks.png'
   srcset=''
   alt='Figma screenshot of design work'
 />
