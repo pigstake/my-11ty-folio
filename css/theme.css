@@ -134,10 +134,12 @@ img {
   max-width: 32em;
 }
 .hero {
-  margin-bottom: calc(var(--scale8) * 1rem);
+  margin-bottom: calc(var(--scale6) * 1rem);
   padding-top: calc(var(--scale6) * 1rem);
   @media (min-width: 900px) {
-    padding-top: calc(var(--scale2) * 1rem);
+    /* display: flex; */
+    /* margin-bottom: calc(var(--scale4) * 1rem);
+    padding-top: calc(var(--scale6) * 1rem); */
   }
   @media (min-width: 1200px) {
     margin-bottom: calc(var(--scale6) * 1rem);
@@ -163,19 +165,16 @@ img {
 }
 .hero__left {
   max-width: 18em;
-}
-@media (min-width: 600px) {
-  .hero__left {
+  @media (min-width: 600px) {
     max-width: 20em;
   }
-}
-@media (min-width: 1200px) {
-  .hero__left {
-   flex-shrink: 0;
+  @media (min-width: 900px) {
+    margin-right: calc(var(--scale4) * 1rem);
   }
-}
-@media (min-width: 1600px) {
-  .hero__left {
+  @media (min-width: 1200px) {
+    flex-shrink: 0;
+  }
+  @media (min-width: 1600px) {
     max-width: 25em;
   }
 }
@@ -531,21 +530,21 @@ POSTS
 }
 .banner {    
   background-color: var(--c-purple);
-  border-radius: 8px 0 0 8px;
-  top: 1rem;
+  border-radius: 8px;
+  max-width: calc(var(--scale10) * 2rem);
   opacity: .9;
   padding: calc(var(--scale0) * 1rem);
-  position: fixed;
-  right: 0;
-  width: calc(var(--scale10) * 2rem);
   z-index: 8;
-
   @media (min-width: 900px) {
-    bottom: 1rem;
-    top: initial;
+    margin-top: calc(var(--scale0) * -1rem);
+    max-width: none;
+    width: fit-content;
   }
 }
 .banner-text {
-  color: white;
+  color: var(--c-white);
   font-size: calc(var(--scale0) * 1rem);
+  @media (min-width: 900px) {
+    font-size: calc(var(--scale-1) * 1rem);
+  }
 }
