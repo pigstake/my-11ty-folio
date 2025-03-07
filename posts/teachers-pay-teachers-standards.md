@@ -1,12 +1,11 @@
 ---
-title: Helping teachers find the right material
-description: This is a post on My Blog about win-win survival strategies.
+title: Helping teachers find the right material for their curricula with better search and browse
 date: 2020-08-30
 year: 2020
 timeline: 3 months
 client: Teachers Pay Teachers
 skills: Interaction & interface design, UX research, Design system management, Creative workshop facilitation
-role: Senior Product Designer
+role: Resposnive UI Design, UX Research, Design Systems
 tags:
 layout: layouts/work.njk
 ---

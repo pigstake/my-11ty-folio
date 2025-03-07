@@ -125,6 +125,9 @@ main {
     padding-top: calc(var(--scale9) * 1rem);
   }
 }
+p:last-of-type {
+  margin-bottom: calc(var(--scale-1) * 3rem);
+}
 /********
 Layout
 ************/
@@ -398,6 +401,9 @@ a[href]:visited {
 strong {
   font-weight: 500;
 }
+ul {
+  padding-inline-start: 0;
+}
 /*********
 QUOTES
 *************/
@@ -442,9 +448,9 @@ WORK LIST
   }
 }
 .worklist-link:hover {
-  cursor: initial;
-  /* text-decoration: underline;
-  text-decoration-thickness: var( --the-thicc); */
+  /* cursor: initial; */
+  text-decoration: underline;
+  text-decoration-thickness: var( --the-thicc);
 }
 .worklist .post-img {
   border: none;
@@ -500,7 +506,7 @@ POSTS
   font-weight: 500;
 }
 .post-img {
-  border: solid var( --the-thicc) var(--c-black);
+  /* border: solid var( --the-thicc) var(--c-black); */
   max-width: calc(100vw - calc(var(--scale3) * 1rem * 2));
 }
 @media (min-width: 600px) {
@@ -541,9 +547,10 @@ POSTS
     width: fit-content;
   }
 }
-.banner-text {
+p.banner-text {
   color: var(--c-white);
   font-size: calc(var(--scale0) * 1rem);
+  margin-bottom: 0;
   @media (min-width: 900px) {
     font-size: calc(var(--scale-1) * 1rem);
   }

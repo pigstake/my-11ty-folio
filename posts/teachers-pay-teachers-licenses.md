@@ -1,12 +1,11 @@
 ---
-title: Scaling a B2B education content marketplace
-description: This is a post on My Blog about win-win survival strategies.
+title: Scaling a B2B education content marketplace to better support teachers and school administrators
 date: 2020-05-30
 year: 2020
 timeline: 3 months
 client: Teachers Pay Teachers
 skills: Interaction & interface design, UX research, Design system management, Creative workshop facilitation
-role: Senior Product Designer
+role: Design Systems, Responsive UI Design
 tags:
 layout: layouts/work.njk
 ---
