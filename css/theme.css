@@ -303,16 +303,23 @@ a[href].logo__link:visited,
 }
 .nav-item::before {
   content: '';
-  background-image: url(../../img/squiggle-menu.svg);
+  background-image: url(../../img/squiggle-menu-fill.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  height: calc(var(--scale10) * 1rem);
-  width: calc(var(--scale10) * 1rem);
-  left: calc(var(--scale4) * -1rem);
-  top: calc(var(--scale6) * -1rem);
+  height: calc(var(--scale8)* 2rem);
+  width: calc(var(--scale8)* 2rem);
+  left: calc(var(--scale5)* -1rem);
+  top: calc(var(--scale7)* -1rem);
   visibility: hidden;
   z-index: -1;
+
+  @media (min-width: 900px) {
+    height: calc(var(--scale9)* 2rem);
+    width: calc(var(--scale9)* 2rem);
+    left: calc(var(--scale7)* -1rem);
+    top: calc(var(--scale9)* -1rem);
+  }
 }
 .nav-item.nav-item-active::before {
   visibility: visible;
