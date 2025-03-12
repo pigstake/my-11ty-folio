@@ -77,7 +77,8 @@ body {
 header,
 .tmpl-home .hero,
 .tmpl-home > .usual-bottom,
-main:not(.tmpl-home) {
+main:not(.tmpl-home),
+.thanks {
   padding-left: calc(var(--scale3) * 1rem);
   padding-right: calc(var(--scale3) * 1rem); /* calc(var(--scale3) * 1rem) PREVIOUS TOP/BOTTOM */
 }
@@ -85,7 +86,8 @@ main:not(.tmpl-home) {
   header,
   .tmpl-home .hero,
   .tmpl-home > .usual-bottom,
-  main:not(.tmpl-home) {
+  main:not(.tmpl-home),
+  .thanks {
     padding-left: calc(var(--scale5) * 1rem);
     padding-right: calc(var(--scale5) * 1rem); /* calc(var(--scale4) * 1rem) */
   }
@@ -94,7 +96,8 @@ main:not(.tmpl-home) {
   header,
   .tmpl-home .hero,
   .tmpl-home > .usual-bottom,
-  main:not(.tmpl-home) {
+  main:not(.tmpl-home),
+  .thanks {
     padding-left: calc(var(--scale7) * 1rem);
     padding-right: calc(var(--scale7) * 1rem); /* calc(var(--scale6) * 1rem) */
   }
@@ -103,7 +106,8 @@ main:not(.tmpl-home) {
   header,
   .tmpl-home .hero,
   .tmpl-home > .usual-bottom,
-  main:not(.tmpl-home) {
+  main:not(.tmpl-home),
+  .thanks {
     padding-left: calc(var(--scale9) * 1rem);
     padding-right: calc(var(--scale9) * 1rem); /* calc(var(--scale6) * 1rem) */
   }
@@ -133,8 +137,13 @@ Layout
 ************/
 p,
 .tmpl-post li,
-img {
+img,
+ul {
   max-width: 32em;
+}
+li:not(.nav-item) {
+  padding-top: calc(var(--scale-1) * 1rem);
+  /* margin-bottom: calc(var(--scale-1) * 1rem); */
 }
 .hero {
   margin-bottom: calc(var(--scale6) * 1rem);
@@ -361,8 +370,15 @@ h3 {
 }
 h4,
 h5 {
-  font-size: calc(var(--scale1) * 1rem);
-  margin-bottom: calc(var(--scale1) * 1rem);
+  font-size: calc(var(--scale0) * 1rem);
+  margin-bottom: calc(var(--scale0) * 1rem);
+}
+@media (min-width: 600px) {
+  h4,
+  h5 {
+    font-size: calc(var(--scale1) * 1rem);
+    margin-bottom: calc(var(--scale1) * 1rem);
+  }
 }
 h6 {
   font-size: calc(var(--scale0) * 1rem);
@@ -438,7 +454,7 @@ WORK LIST
   padding: 0;
 }
 .worklist-item {
-  margin-bottom: calc(var(--scale7) * 1rem);
+  margin-bottom: calc(var(--scale8) * 1rem);
 }
 .worklist-link {
   text-decoration: none;
@@ -467,9 +483,10 @@ WORK LIST
   margin-bottom: calc(var(--scale-1) * 1rem);
   margin-top: 0;
 }
-.worklist-details {
+p.worklist-details {
   font-size: calc(var(--scale-1) * 1rem);
   font-weight: normal;
+  margin-bottom: 0;
   margin-top: 0;
   
 }
@@ -534,6 +551,11 @@ POSTS
 .post-nav-link {
   font-weight: 500;
 }
+
+.thanks > p:first-of-type {
+  padding-top: calc(var(--scale3) * 1rem);
+}
+
 .banner {    
   background-color: var(--c-purple);
   border-radius: 8px;

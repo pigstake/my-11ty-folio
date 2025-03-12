@@ -5,7 +5,7 @@ year: 2020
 timeline: 3 months
 client: Teachers Pay Teachers
 skills: Interaction & interface design, UX research, Design system management, Creative workshop facilitation
-role: Resposnive UI Design, UX Research, Design Systems
+role: Responsive UI Design, UX Research, Design Systems
 tags:
 layout: layouts/work.njk
 ---

@@ -17,6 +17,7 @@ layout: layouts/work.njk
   alt='Figma screenshot of design work'
 />
 <section class='usual-bottom'>
+  <h5 class='hero-subheading'>First step!</h5>
   <h3>Understanding the pre-existing experience</h3>
   <img
     class='post-img'
@@ -24,7 +25,7 @@ layout: layouts/work.njk
     srcset=''
     alt='Figma screenshot of design work'
   />
-  <p>I hit the ground running on this project, my first at Ridwell. Leadership had already defined a new subscription model they planned to launch to ~90,000 customers in four months. Conversations with co-founders, customer success specialists, and engineers, as well as customer interviews and my own heuristic evaluation helped me understand what Ridwell customers experienced with the existing service. Diagrams like the one above, with flows, screenshots, and my critical notes helped me craft a vision for how to shape the new subscription model with care for both business and customer needs.</p>
+  <p>I hit the ground running on this project, my first at Ridwell. Leadership had already defined a new subscription model they planned to launch to ~90,000 customers in four months. I spoke with co-founders, customer success specialists, engineers, and customers. I tore down the existing designs with heuristic evaluation. All this helped me understand what Ridwell customers experienced with the existing service, how to improve design quality, and what business stakeholders hoped to achieve. Diagrams like the one above, with flows, screenshots, and my critical notes helped me craft a vision for how to shape the new subscription model with care for both business and customer needs.</p>
 </section>
 <section class='usual-bottom'>
   <h3>Exploring how to present the new subscription model</h3>
@@ -53,7 +54,7 @@ layout: layouts/work.njk
       srcset=''
       alt='Figma screenshot of design work'
     />
-    <p>Redesigning the subscription experience using a new visual langauge provided opportunities to improve accessibility and maintainability in the codebase.</p>
+    <p>Redesigning the subscription experience using a new visual language provided opportunities to improve accessibility and maintainability in the codebase.</p>
   </section>
   <section>
     <img
@@ -79,7 +80,7 @@ layout: layouts/work.njk
     alt='Figma screenshot of design work'
   />
   <h4>Iteration challenges and decisions</h4>
-  <p>A ha! A few weeks after launch, thanks to user interviews I facilitated, we learned that people want to know how big the Ridwell bin is and how easy it is to change or cancel their plan after they sign up. My product manager and a co-founder expressed concern about telling people how easy it is to cancel. Won’t this reduce retention? They were attracted to the idea of making it difficult to cancel, of obfuscating this information. Given my research, and examples of subscription services that make a benefit of easy plan switching, pausing, or canceling, I convinced the team to test out a low-effort solution. We added a few lines of copy. Customer retention didn‘t drop at all, and subscription conversion steadily increased in the next several months.</p>
+  <p>A ha! A few weeks after launch, thanks to user interviews I facilitated, we learned that people want to know how big the Ridwell bin is and how easy it is to change or cancel their plan after they sign up. My product manager and a co-founder expressed concern about telling people how easy it is to cancel. Won’t this reduce retention? They were attracted to the idea of making it difficult to cancel, of obfuscating this information. Given my research, and examples of subscription services that make a benefit of easy plan switching, pausing, or canceling, I convinced the team to test out a low-effort solution. We added a few lines of copy. Customer retention didn’t drop at all, and subscription conversion steadily increased in the next several months.</p>
   <img
     class='post-img'
     src='../../img/ridwell/img-plans.png'
