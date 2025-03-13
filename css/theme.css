@@ -112,6 +112,16 @@ main:not(.tmpl-home),
     padding-right: calc(var(--scale9) * 1rem); /* calc(var(--scale6) * 1rem) */
   }
 }
+@media (min-width: 2000px) {
+  header,
+  .tmpl-home .hero,
+  .tmpl-home > .usual-bottom,
+  main:not(.tmpl-home),
+  .thanks {
+    padding-left: calc(var(--scale10) * 1rem);
+    padding-right: calc(var(--scale10) * 1rem); /* calc(var(--scale6) * 1rem) */
+  }
+}
 body,
 header {
   background-color: var(--c-white);
@@ -161,10 +171,6 @@ li:not(.nav-item) {
     margin-bottom: calc(var(--scale7) * 1rem);
     padding-top: calc(var(--scale1) * 1rem);
   }
-  @media (min-width: 2000px) {
-    margin-bottom: calc(var(--scale7) * 1rem);
-    padding-top: 0;
-  }
 }
 .tmpl-home .hero {
   display: flex;
@@ -172,7 +178,6 @@ li:not(.nav-item) {
   @media (min-width: 1200px) {
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 .hero__left {
@@ -180,14 +185,15 @@ li:not(.nav-item) {
   @media (min-width: 600px) {
     max-width: 20em;
   }
-  @media (min-width: 900px) {
-    margin-right: calc(var(--scale4) * 1rem);
-  }
   @media (min-width: 1200px) {
     flex-shrink: 0;
+    margin-right: calc(var(--scale1) * 1rem);
   }
   @media (min-width: 1600px) {
     max-width: 25em;
+  }
+  @media (min-width: 2000px) {
+    margin-right: calc(var(--scale5) * 1rem);
   }
 }
 .hero-heading,
@@ -222,10 +228,8 @@ Image considerations
 @media (min-width: 1200px) {
   .hero-img {
     margin-left: 0;
-    max-height: none;
-    max-width: 100%;
-    position: relative;
-    right: calc(var(--scale0) * 1rem * -1.25);
+    max-width: calc(50vw - calc(var(--scale9)* 1rem));
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
