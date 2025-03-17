@@ -16,6 +16,7 @@ Theme settings
   --scale8: 5.96;
   --scale9: 7.451;
   --scale10: 9.313;
+  --scale11: 11.641;
   /* Colors */
   --c-black: #2D1D20;
   --c-white: #FFFDFB;
@@ -550,6 +551,16 @@ POSTS
 @media (min-width: 1200px) {
   .post-img {
     max-width: calc(100vw - calc(var(--scale9) * 1rem * 2));
+  }
+}
+@media (min-width: 1600px) {
+  .post-img {
+    max-width: calc(100vw - calc(var(--scale10) * 1rem * 2));
+  }
+}
+@media (min-width: 2000px) {
+  .post-img {
+    max-width: calc(100vw - calc(var(--scale11) * 1rem * 2));
   }
 }
 .post-nav {
