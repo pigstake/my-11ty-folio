@@ -3,7 +3,10 @@ layout: layouts/base.njk
 templateClass: tmpl-work
 ---
 <section class='work-hero'>
-  <h1>{{ title }}</h1>
+  <h1 class='work-hero__heading'>{{ title }}</h1>
+  <p class="work-hero__details"><span class="work-hero__details--top">{{ client }} / {{ year }}</span>
+    <br />{{ role }}
+  </p>
   <p>{{ description }}</p>
   <!--
   <div class='post-details'>

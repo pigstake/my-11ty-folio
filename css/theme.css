@@ -261,10 +261,16 @@ img.lazyloaded {
 }
 .squiggle {
   margin-left: -6vw;
-  max-width: 15rem;
+  max-width: 18rem;
   mix-blend-mode: multiply;
   position: relative;
   z-index: 9;
+}
+@media (min-width: 900px) {
+  .squiggle {
+    margin-left: -9vw;
+    max-width: 20rem;
+  }
 }
 .has-fancy-border {
   border: solid 0.25rem gold;
@@ -502,13 +508,21 @@ p.worklist-details {
   font-weight: normal;
   margin-bottom: 0;
   margin-top: 0;
-  
 }
-.worklist-details--top {
+.worklist-details--top,
+.work-hero__details--top {
   font-weight: 500;
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
+}
+.tmpl-work .work-hero__heading {
+  margin-bottom: calc(var(--scale5) * 1rem);
+}
+p.work-hero__details {
+  font-size: calc(var(--scale-1) * 1rem);
+  font-weight: normal;
+  margin-bottom: calc(var(--scale7) * 1rem);
 }
 /*********
 POSTS

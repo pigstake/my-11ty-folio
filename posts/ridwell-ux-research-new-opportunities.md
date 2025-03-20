@@ -22,4 +22,6 @@ layout: layouts/work.njk
   srcset=''
   alt='Figma screenshot of design work'
 />
-<h2>More coming soon!</h2>
+<div class='banner'>
+  <p class='banner-text'>More coming soon!</p>
+</div>
