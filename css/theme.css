@@ -262,7 +262,9 @@ img.lazyloaded {
 .squiggle {
   margin-left: -6vw;
   max-width: 15rem;
+  mix-blend-mode: multiply;
   position: relative;
+  z-index: 9;
 }
 .has-fancy-border {
   border: solid 0.25rem gold;

@@ -1,5 +1,6 @@
 ---
-title: Scaling a B2B education content marketplace to better support teachers and school administrators
+title: Helping school administrators to scale a B2B education content marketplace
+description: I designed and helped launch major redesigns to the search and discovery experience of a new Teachers Pay Teachers product. This new experience for grade school teachers helped improve B2B acquisition and retention.
 date: 2020-05-30
 year: 2020
 timeline: 3 months
@@ -15,11 +16,10 @@ layout: layouts/work.njk
   srcset=''
   alt='Figma screenshot of design work'
 />
-<h3>Customer problem and business outcome</h3>
+<h3>Designing </h3>
 <p>Teachers Pay Teachers (TPT) is a two-sided marketplace for teachers to buy and sell materials. A few months before I joined, TPT launched a B2B service, selling subscriptions to schools. These schools pay to access content and, in turn, provide content licenses to teachers. Thanks to this subscription, teachers don't have to pay out-of-pocket for as much teaching content.</p>
 <p>One major problem, though, was that TPT account managers managed licenses for school admins. This process was a major pain point for teachers, administrators, and account managers. It made it difficult for teacher's to use the materials they needed on TPT. I designed and helped launch the first tools that admins could use to distribute content licenses to teachers. These tools improved customer acquisition and retention.</p>
-
-<h3>Work artifacts</h3>
+<section class='usual-bottom'>
 <h4>Our team hub, a design single source of truth in Figma</h4>
 <p>The product manager and I managed an opportunity solution tree across our product scope. From that map, we prioritized potential solutions for this opportunity with other teammates. I facilitated workshops to help the team visualize these possibilities, so we could better decide and move forward together. I provided an overview and hub for the team in Figma that helped us stay focused, which you can see here. </p>
 <img

@@ -10,6 +10,7 @@ role: Responsive UI Design, UX Research, Design Systems
 tags:
 layout: layouts/work.njk
 ---
+<p class='usual-bottom'>See my work on the site: <a href='https://www.ridwell.com/plans/plastic-plus'>ridwell.com/plans/plastic-plus</a></p>
 <img
   class='post-img usual-bottom'
   src='../../img/ridwell/ridwell-growth-mocks.png'
@@ -92,4 +93,9 @@ layout: layouts/work.njk
     alt='Figma screenshot of design work'
   />
 </section>
-<p>See my work on the site: <a href='https://www.ridwell.com/plans/plastic-plus'>ridwell.com/plans/plastic-plus</a></p>
+<section class='usual-bottom'>
+  <h4>Reflecting on the process</h4>
+  <p> The process wasn’t perfect. We could have launched with more focus on craft if we had more upfront strategic shaping. In our fixed 12-week timeline, I needed to run research to help leadership agree on a major decision: to ask for an address instead of a zip code for specific prices. The marketing team feared the increased sign-up friction if we asked for an address. The product team wanted to experiment with a new interaction that provided accurate prices as early as possible. Neither team seemed ready to disagree and commit.</p>
+  <p>If this had been shaped earlier, I could have spent two more weeks translating the recent mobile visual language into the web app, and evaluating design quality before launch. As a result, the UI quality at launch suffered; we had to compromise on updates to typography, colors, and components.</p>
+  <p>In hindsight, my mistake had been to suggest the upfront research as a means to help build alignment. After launch, I eventually ran an A/B test to compare the impact of address and zip code entry on sign-up conversion. I had advocated for shipping to learn before launch, because I generally believe this to be good practice for software teams. Without my upfront research, the team would have had to disagree and commit — probably to the same decision. The team would have exercised a valuable process muscle, and more customers might have signed up thanks to more attention to design details.</p>
+</section>
