@@ -83,3 +83,7 @@ layout: layouts/work.njk
     alt='Figma screenshot of design work'
   />
 </section>
+<div class='usual-bottom'>
+  <p class="quote"><q>With a fleet of over 150 drivers across the country managed by a small dispatch team, it was critical that we gave our drivers better tooling to make smarter decisions on the road and gave our dispatch team greater insight and better data for faster decisions so we could continue to scale the business. Jamie led these projects, working closely with end users (our drivers and dispatch team) as well as operations leaders to ensure the success of the initiative, which decreased driver troubleshooting and driver frustration.</q></p>
+  <p class="quote__byline">– Aliya Marder, Co-founder @ Ridwell</p>
+</div>

@@ -99,3 +99,7 @@ layout: layouts/work.njk
   <p>If this had been shaped earlier, I could have spent two more weeks translating the recent mobile visual language into the web app, and evaluating design quality before launch. As a result, the UI quality at launch suffered; we had to compromise on updates to typography, colors, and components.</p>
   <p>In hindsight, my mistake had been to suggest the upfront research as a means to help build alignment. After launch, I eventually ran an A/B test to compare the impact of address and zip code entry on sign-up conversion. I had advocated for shipping to learn before launch, because I generally believe this to be good practice for software teams. Without my upfront research, the team would have had to disagree and commit — probably to the same decision. The team would have exercised a valuable process muscle, and more customers might have signed up thanks to more attention to design details.</p>
 </section>
+<div class='usual-bottom'>
+  <p class="quote"><q>This required thoughtful user research, stakeholder management, and expert product design to transition the members and the business toward a new way of thinking about our product. Not only did our members successfully transition to these new plans, but the project drove a $4.50 (33%) increase in average revenue per user putting Ridwell in better position for future profitability and fundraising.</q></p>
+  <p class="quote__byline">– Aliya Marder, Co-founder @ Ridwell</p>
+</div>
