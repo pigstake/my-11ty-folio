@@ -39,7 +39,7 @@ The color palette is primarily the original sticky note yellow, bright pink and 
 ### The impact
 Dotvoter transformed Philosophie culture. The CEO uses it during company-wide meetings. Product teams use it with clients during retros. People bring it with them to their new jobs when they leave Philosophie. There was organic adoption: 6,900 people cast over 22,300 votes on more than 21,000 ideas in two years without paid marketing effort.
 
-Sadly, the product was shutdown in 2022 when Philosophie stopped supporting it. My big lesson from this work: pitch, experiment with, and prove a business model for internal tools like this. I believe we had the skill and timing to find traction. And I believe that client service companies benefit from branching into tangential business models. Without the business impact vision, though, it was unclear to leadership how to invest in this work.
+Sadly, the product was shut down in 2022 when Philosophie stopped supporting it. My big lesson from this work: pitch, experiment with, and prove a business model for internal tools like this. I believe we had the skill and timing to find traction. And I believe that client service companies benefit from branching into tangential business models. Without the business impact vision, though, it was unclear to leadership how to invest in this work.
 
 <img
   class='post-img'
